@@ -25,6 +25,10 @@ public class Unit1Summ {
         double numdb1 =  Double.parseDouble(num);  //Makes first number a double
         double numdb2 =  Double.parseDouble(num2);  //Makes second nubmer a double
         String name2 = name.toUpperCase(); //Makes name uppercase
+        
+        int spacePos= name2.indexOf(" ");
+        name2 = name2.substring(0, spacePos);
+        
         double sum = numdb1 + numdb2; //Makes sum
         double diff = numdb1 - numdb2; //Makes difference
         double prod = numdb1*numdb2; //Makes product
